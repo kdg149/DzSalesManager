@@ -32,4 +32,9 @@ public class SalesManager {
         }
         return sum;
     }
+
+    public long average() {
+        long average = (sum() - max() - min()) / (sales.length - 2);
+        return average;
+    }
 }

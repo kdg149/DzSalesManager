@@ -5,16 +5,11 @@ public class Main {
 
         SalesManager salesManager = new SalesManager(sales);
 
-        long max = salesManager.max();
-        long min = salesManager.min();
-        long sum = salesManager.sum();
+        long average = salesManager.average();
 
         for (int i = 0; i < sales.length; i++) {
             System.out.print(sales[i] + ", ");
         }
-        System.out.println("\n Максимальный: " + max);
-        System.out.println("Средний " +
-                "без учета минимального " +
-                "и макимального: " + (sum - max - min) / (sales.length - 2));
+        System.out.println("\n Обрезанный средний  " + average);
     }
 }
